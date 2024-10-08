@@ -8,7 +8,7 @@ sections:
   - block: hero
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
-      title: Hugo Academic Theme
+      title: Hugo Academic Themeeeee
       image:
         filename: hero-academic.png
       cta:
@@ -39,121 +39,87 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: Hello there!
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: skills
-    content:
-      title: Skills
-      text: ''
-      # Choose a user to display skills from (a folder name within `content/authors/`)
-      username: admin
-    design:
-      columns: '1'
+
+
+
+
+
+    widget: experience
+
+    # This file represents a page section.
+    headless: true
+
+    # Order that this section appears on the page.
+    weight: 40
+
+    title: Experience
+    # subtitle:
+
+
   - block: experience
+    id: experience
     content:
       title: Experience
-      # Date format for experience
-      #   Refer to https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
       # Experiences.
       #   Add/remove as many `experience` items below as you like.
       #   Required fields are `title`, `company`, and `date_start`.
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
-          description: |2-
-              Responsibilities include:
+      # items:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
-    design:
-      columns: '2'
-  - block: accomplishments
-    content:
-      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
-      subtitle:
-      # Date format: https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Accomplishments.
-      #   Add/remove as many `item` blocks below as you like.
-      #   `title`, `organization`, and `date_start` are the required parameters.
-      #   Leave other parameters empty if not required.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
-          date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+        - title: Retail Data Analyst
+          company: Rochester Institute of Technology
+          company_url: ''
+          # company_logo: org-gc
+          location: Rochester, New York
+          date_start: '2023-05-20'
+          # date_end: '2023-09-01'
+          description: |2-      
+              * Improved RIT Dining’s digital systems by working closely with the team and leveraging Agilysys and InfoGenesis
+              software, focusing on customizing and managing ETL processes for OnDemand items, menus, kiosks, and registers
+              *  Performed data cleansing and manipulation on a dataset of approximately 30,000 inventory items, ensuring
+              accuracy and consistency by handling missing values, duplicates, and data formatting issues for the dining system
+        - title: Data Engineer
+          company: Accenture
+          company_url: ''
+          # company_logo: org-gc
+          location: India
+          date_start: '2021-09-01'
+          date_end: '2022-09-01'
+          description: |2-      
+              * Optimized retail data processes for a banking client by directing ETL workflows using Ab Initio and Autosys,
+              resulting in an 80% improvement in data processing efficiency and significantly enhancing operational speed
+              *  Deployed advanced ETL components like Aggregate, Join, Reformat, Rollup, and Scan to effectively manage and
+              transform large data sets, enhancing data processing capabilities and increasing throughput by over 50%   
+              * Directed code refinement and monitoring of daily scheduled jobs, alongside usage of Jira for feature tracking, conducted detailed run reviews, ensuring error-free deployments and the consistent delivery of functional software sprints 
+              * Implemented parallelism techniques for processing data simultaneously, reducing processing time by 40%
+        - title: Data and System Developer Intern
+          company: Equinox Partners LLC (EQ Labs)
+          company_url: ''
+          location: United States
+          date_start: '2019-12-19'
+          date_end: '2020-01-20'
+          description: |2-      
+              * Created a magazine application based on augmented reality serving as a medium for marketing using the Unity framework, Vuforia, and various assets and SDKs.
+              * Research conducted on various use cases of Augmented and Virtual Reality leading to a paper published in an IEEE conference.
+        - title: Android Developer Intern
+          company: University of Mumbai
+          company_url: ''
+          # company_logo: org-x
+          location: India
+          date_start: '2019-12-19'
+          date_end: '2020-01-20'
+          description: |2-      
+              * Engineered a user-centric android application tailored for the college community, facilitating direct online access to an    extensive library catalog with 9,000 book listings, widely adopted by over 2,200 students and faculty
+              * Expertly integrated Java and PHP in an Android SDK framework with HTML and CSS for enhanced design, backed  by a dynamic MySQL database, leveraging Firebase for real-time data sync and a 30% more efficient cloud storage
     design:
       columns: '2'
-  - block: collection
-    id: posts
-    content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
+
   - block: portfolio
     id: projects
     content:
@@ -171,42 +137,82 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+        - name: Machine Learning
+          tag: Machine Learning
+        - name: Data Engineering
+          tag: Data Engineering
+        - name: Data Analytics
+          tag: Data Analytics
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
-      view: showcase
+      view: 3 
       # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
-  - block: markdown
+      flip_alt_rows: true
+
+      # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   5 = Showcase
+
+  - block: accomplishments
+    id : certifications
     content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
-  - block: collection
-    id: featured
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
+      title: 'Certifications'
+      subtitle:
+      # Date format: https://docs.hugoblox.com/customization/#date-format
+      date_format: Jan 2006
+      # Accomplishments.
+      #   Add/remove as many `item` blocks below as you like.
+      #   `title`, `organization`, and `date_start` are the required parameters.
+      #   Leave other parameters empty if not required.
+      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+      items:
+        - certificate_url: https://www.credly.com/badges/0233ce50-c1b9-413a-93d0-fa1bd2cc7283/linked_in_profile
+          date_end: '2027-04-14'
+          date_start: '2024-04-14'
+          description: ''
+          # icon: coursera
+          organization: Amazon Web Services (AWS)
+          organization_url: https://aws.amazon.com
+          title: AWS Certified Cloud Practitioner
+          url: ''
+
+        - certificate_url: https://achieve.snowflake.com/2fadaa25-0d69-4d18-a1bd-1c97a049583d
+          date_end: ''
+          date_start: '2024-05-19'
+          organization: Snowflake
+          organization_url: https://www.snowflake.com/en/
+          title: Hands-On Essentials - Data Warehousing Workshop
+          url: https://learn.snowflake.com/en/courses/uni-essdww101/ 
+
+        - certificate_url: https://www.hackerrank.com/certificates/2acd9c2fee16
+          date_end: ''
+          date_start: '2020-07-01'
+          organization: HackerRank
+          organization_url: https://www.hackerrank.com
+          title: Python
+
+        
+        - certificate_url: https://coursera.org/verify/62CP53HPRZRK
+          date_end: ''
+          date_start: '2020-07-01'
+          description: ''
+          organization: Coursera (University of Michigan)
+          organization_url: https://www.coursera.com
+          title: 'Python for Everybody'
+          url: ''
+
+          
     design:
       columns: '2'
-      view: card
+
+
   - block: collection
+    id: publications
     content:
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+      title: Publications
       filters:
         folders:
           - publication
@@ -214,70 +220,27 @@ sections:
     design:
       columns: '2'
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      columns: '2'
-      view: compact
-  - block: tag_cloud
-    content:
-      title: Popular Topics
-    design:
-      columns: '2'
+
   - block: contact
     id: contact
     content:
-      title: Contact
+      title: Contact Details
       subtitle:
-      text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
-      # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
+      
+      email: rb1859@rit.edu
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
+        city: Rochester
+        region: New York
+        postcode: '14623'
         country: United States
         country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      # Choose a map provider in `params.yaml` to show a map from these coordinates
-      coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'  
+
       contact_links:
-        - icon: twitter
+        - icon: linkedin
           icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/Twitter'
-        - icon: skype
-          icon_pack: fab
-          name: Skype Me
-          link: 'skype:echo123?call'
-        - icon: video
-          icon_pack: fas
-          name: Zoom Me
-          link: 'https://zoom.com'
-      # Automatically link email and phone or display as text?
+          name: Connect with me on LinkedIn!
+          link: 'https://www.linkedin.com/in/rutvi-bheda/'
       autolink: true
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
     design:
       columns: '2'
 ---

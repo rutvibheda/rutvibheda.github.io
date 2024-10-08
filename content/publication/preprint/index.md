@@ -1,7 +1,9 @@
 ---
-title: "An example preprint / working paper"
+title: "Identification of Hate Speech using Natural Language Processing and Machine Learning"
 authors:
 - admin
+- Femin Dharamshi
+- Darsh Bhimani
 date: "2019-04-07T00:00:00Z"
 doi: ""
 
@@ -27,16 +29,13 @@ tags:
 featured: false
 
 links:
-- name: Custom Link
-  url: http://example.org
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: '#'
-url_poster: '#'
+
+- name: PDF
+  url: Identification_of_Hate_Speech_using_Natural_Language_Processing_and_Machine_Learning.pdf
+- name: Paper Link (Source)
+  url: https://ieeexplore.ieee.org/document/9587652
 url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+# url_slides: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -51,14 +50,14 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- internal-project
+- project1
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+# slides: example
 ---
 
 {{% callout note %}}
